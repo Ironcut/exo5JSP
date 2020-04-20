@@ -26,7 +26,7 @@ public class LireIdentBD {
 		Connection con = null;
 
 		try {
-			Class.forName(com.mysql.cj.jdbc.Driver.class.getName());
+			Class.forName(com.mysql.jdbc.Driver.class.getName());
 		} catch (ClassNotFoundException e) {
 			System.out.println("Impossible de charger le driver");
 		}
