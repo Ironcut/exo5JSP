@@ -47,7 +47,6 @@ public class LireIdentBD {
 			}
 
 		} catch (SQLException sqlE) {
-			JOptionPane.showMessageDialog(null, "Utilisateur non reconnu: " + nom);
 			System.out.println("Utilisateur non reconnu: " + nom);
 			return u;
 		}
