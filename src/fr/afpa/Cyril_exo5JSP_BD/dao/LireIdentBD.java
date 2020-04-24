@@ -23,10 +23,10 @@ public class LireIdentBD {
 
 	public Utilisateur LireBD(String nom, String motDePasse) throws SQLException {
 
-		Connection con = null;
+		Connection con = null ;
 
 		try {
-			Class.forName(com.mysql.jdbc.Driver.class.getName());
+			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
 			System.out.println("Impossible de charger le driver");
 		}
